@@ -1,31 +1,30 @@
-# Etapa 1: Build do Flutter Web
-FROM cirrusci/flutter:latest AS build
+# Etapa 1: Build do Flutter Web com Dart 3+
+FROM ghcr.io/cirruslabs/flutter:stable AS build
 
 WORKDIR /app
 
-# Copia os arquivos do projeto
+# Copia o projeto
 COPY . .
 
 # Instala dependências
 RUN flutter pub get
 
-# Gera o build do Flutter Web
+# Gera o build Web
 RUN flutter build web --release
 
 # Etapa 2: Servir com Nginx
 FROM nginx:alpine
 
-# Remove arquivos default do nginx
-RUN rm -rf /usr/share/nginx/html/*
+WORKDIR /usr/share/nginx/html
 
-# Copia o build para a pasta pública do nginx
-COPY --from=build /app/build/web /usr/share/nginx/html
+# Limpa html padrão do Nginx
+RUN rm -rf ./*
 
-# Copia configuração customizada do nginx (opcional)
-# COPY nginx.conf /etc/nginx/nginx.conf
+# Copia build do Flutter para a pasta pública do Nginx
+COPY --from=build /app/build/web .
 
-# Expor a porta 80
+# Expor a porta
 EXPOSE 80
 
-# Iniciar o Nginx
+# Inicia o nginx
 CMD ["nginx", "-g", "daemon off;"]
