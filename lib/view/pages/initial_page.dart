@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:site/core/app_colors.dart';
-import 'package:site/core/app_images.dart';
-import 'package:site/core/app_spaces.dart';
-import 'package:site/core/app_text.dart';
 import 'package:site/view/components/custom_app_bar.dart';
-import 'package:site/view/components/custom_button.dart';
 import 'package:site/view/components/custom_cover.dart';
 import 'package:site/view/components/custom_section_futures.dart';
 import 'package:site/view/components/custom_section_01.dart';
