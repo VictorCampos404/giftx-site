@@ -46,7 +46,7 @@ class CustomCover extends StatelessWidget {
                       bottom: AppSpaces.x2,
                     ),
                     child: const Text(
-                      "Gift\nMore\nSmiles Fazendo deploy automático",
+                      "Gift\nMore\nSmiles",
                       textAlign: TextAlign.center,
                     ).title(),
                   ),
