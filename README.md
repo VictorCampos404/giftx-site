@@ -1,16 +1,23 @@
-# site
+# Giftx Site
 
-A new Flutter project.
+## Descrição
 
-## Getting Started
+Giftx é uma landing page desenvolvida em Flutter que apresenta as funcionalidades principais do nosso serviço: comprar cartões-presente e enviá-los para alguém especial. Este projeto foi criado com foco em simplicidade e eficiência, proporcionando aos usuários uma experiência rápida e intuitiva.
 
-This project is a starting point for a Flutter application.
+Este projeto também foi uma oportunidade para aprimorar minhas técnicas de frontend, explorando boas práticas de design e desenvolvimento em Flutter. Meu objetivo foi criar uma interface visualmente atraente, funcional e responsiva, alinhando tecnologia e experiência do usuário de forma eficiente.
 
-A few resources to get you started if this is your first Flutter project:
+Sinta-se à vontade para explorar, contribuir e sugerir melhorias! 🚀
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Funcionalidades
+- Design responsivo e moderno.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Imagens
+
+<img src="assets/screenshots/site-1.png">
+
+<img src="assets/screenshots/site-2.png">
+
+<img src="assets/screenshots/site-3.png">
+
+<img src="assets/screenshots/site-4.png">
+  
